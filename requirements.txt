@@ -1,0 +1,12 @@
+Flask
+pypandoc
+pyyaml
+bs4
+requests
+dnspython
+Flask-SQLAlchemy
+sqlalchemy
+ipwhois
+python-whois
+numpy
+uwsgi

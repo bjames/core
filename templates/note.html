@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block head %}<link rel="canonical" href="https://{{ config.URI }}/{{ config.NOTES_DIR }}/{{ note.filename }}"/>{% endblock %}
+{% block body_class %}note{% endblock %}
+{% block content %}
+{% if note is defined %}
+<div class="note_title_block">
+    <h1>{{ note.title }}</h1>
+    <p class="note_subtitle">By {{ note.author }} on {{ note.publication_date }}</p>
+</div>
+{% endif %}
+<div class="note_content">
+{{ rendered(filename) | safe }}
+</div>
+{% endblock %}

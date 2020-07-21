@@ -1,0 +1,7 @@
+.vscode/settings.json
+__pycache__
+venv/
+static/rendered/
+static/images/post/
+raw/
+*.db
