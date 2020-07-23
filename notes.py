@@ -18,8 +18,9 @@ class Note:
         self.title = kwargs.get("title")
         self.author = kwargs.get("author")
         self.publication_date = kwargs.get("publication_date")
-        self.summary = kwargs.get("summary")
 
+
+        self.summary = kwargs.get("summary")
         self.tags = kwargs.get("tags")
 
         if self.tags == None:
