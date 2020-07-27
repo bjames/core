@@ -13,9 +13,5 @@
         <changefreq>{% if note.update_interval %}{{ note.update_interval }}{% else %}monthly{% endif %}</changefreq>
     </url>
     {% endfor %}
-    <!-- End Generated Content -->
-    <url>
-        <loc>https://{{ config.URI }}/tools</loc>
-    </url>
-    
+    <!-- End Generated Content --> 
 </urlset>

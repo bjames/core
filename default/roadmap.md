@@ -19,7 +19,8 @@ Core is still in it's infancy so it's very much a work in progress. This roadmap
 - Render new and modified markdown without a reboot
 - Better night/day mode image handling
 - Minimize JS and CSS at server start
-- Logo and config files should be loaded from the raw folder
+- Logo, favicons and config files should be loaded from the raw folder
+- Flesh out the guides on the demo site
 
 # v0.3.0 Planned Features
 - Additional built in CSS options
@@ -27,3 +28,4 @@ Core is still in it's infancy so it's very much a work in progress. This roadmap
 # The road to v1.0.0
 - Admin Panel
 - Additional Markdown Upload options
+- Plugin support

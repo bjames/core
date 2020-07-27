@@ -8,7 +8,7 @@ tags:
 author: Brandon James
 ---
 
-Release notes for every core release starting with v0.1.0
+List of bugfixes and new features for every core release starting with v0.1.0
 
 # v0.1.0 Release Notes
 - Initial split from the NTN codebase

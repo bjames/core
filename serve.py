@@ -2,6 +2,7 @@ from flask import Flask, render_template, send_from_directory, request, abort
 from render import render_all
 
 from datetime import datetime
+from yaml import safe_load
 
 import os
 
@@ -9,8 +10,14 @@ app = Flask(__name__)
 
 app.url_map.strict_slashes = False
 
-# TODO as we get closer migrate to https://flask.palletsprojects.com/en/1.1.x/config/
+# https://flask.palletsprojects.com/en/1.1.x/config/
 app.config.from_pyfile("config.py")
+
+with open("raw/config.yml") as yaml_config:
+    user_config = safe_load(yaml_config)
+print(user_config)
+app.config.update(user_config)
+
 os.environ.setdefault('PYPANDOC_PANDOC', app.config["PANDOC_PATH"])
 
 notes, tag_set, static_pages = render_all()
