@@ -13,10 +13,13 @@ app.url_map.strict_slashes = False
 # https://flask.palletsprojects.com/en/1.1.x/config/
 app.config.from_pyfile("config.py")
 
-with open("raw/config.yml") as yaml_config:
-    user_config = safe_load(yaml_config)
-print(user_config)
-app.config.update(user_config)
+try:
+    with open("raw/config.yml") as yaml_config:
+        user_config = safe_load(yaml_config)
+    print(user_config)
+    app.config.update(user_config)
+except:
+    pass
 
 os.environ.setdefault('PYPANDOC_PANDOC', app.config["PANDOC_PATH"])
 

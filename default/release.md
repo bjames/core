@@ -8,7 +8,7 @@ tags:
 author: Brandon James
 ---
 
-List of bugfixes and new features for every core release starting with v0.1.0
+List of bugfixes, caveats and new features for every core release. Prior to updating to a new release I recommend reading these notes.
 
 # v0.1.0 Release Notes
 - Initial split from the NTN codebase

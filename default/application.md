@@ -1,5 +1,5 @@
 ---
-title: Basic Application Setup
+title: File Management
 publication_date: 2020-06-20
 tags:
 - core
@@ -8,7 +8,7 @@ tags:
 author: Brandon James
 ---
 
-`core` is a simple, markdown based blogging framework. To use core, simply create a new subdirectory in your `core` folder. I usually call it `raw`, but you can give it any name you like as long as the `input_directory` is updated in `config.py` to point to the new folder instead of `default`. 
+`core` is a simple, markdown based blogging framework. To use core, simply create a new subdirectory in your `core` folder. I usually call it `raw`, but you can give it any name you like as long as the `input_directory` is updated in `config.py` to point to the new folder instead of `default`.
 
 ```
 ├── default
@@ -48,3 +48,5 @@ raw/
 ├── rp_hash.md
 └── wlc_cli.md
 ```
+
+In the case of NTN, I store my markdown files in github. When setting up a new NTN server, I simply clone the NTN markdown repo in the raw folder. Once that's been done, obtaining updates is as simple as running git pull from the server. At present the core service does need to be restarted in order to pickup changes. Automatic change detection and re-rendering is on the roadmap for core v2. 
